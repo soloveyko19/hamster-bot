@@ -270,7 +270,7 @@ def show_main_menu(stdscr: curses.window):
         choosen = choosen % 5
 
 
-if __name__ == "__main__":
+def run():
     try:
         curses.wrapper(show_main_menu)
     except KeyboardInterrupt:
